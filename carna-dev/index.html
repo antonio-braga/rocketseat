@@ -2,19 +2,45 @@
 <html lang="pt-br">
 
 <head>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <title>Encontre seu bloco de carnaval</title>
+  <script src="https://unpkg.com/phosphor-icons"></script>
 </head>
 
 <body>
   <header>
-    <p>find you block</p>
-    <h1>Encontre os <span>melhores blocos</span> de carnaval de 2023</h1>
-    <form class="search">
-
-    </form>
+    <div class="content">
+      <div class="top">
+        <p>find you block</p>
+        <h1>Encontre os <span>melhores blocos</span> de carnaval de 2023</h1>
+      </div>
+      <form class="search">
+        <div class="search-field">
+          <label class="sr-only" for="name">Pesquise por nome</label>
+          <i class="ph-magnifying-glass-light"></i>
+          <input type="text" id="name" name="name" placeholder="Pesquise por nome">
+        </div>
+        <div class="search-field">
+          <label class="sr-only" for="city">Selecione uma cidade</label>
+          <i class="ph-map-pin-light"></i>
+          <select id="city" name="city">
+            <option value="0" selected>Selecione uma cidade</option>
+            <option value="sao-paulo">São Paulo</option>
+            <option value="rio-de-janeiro">Rio de Janeiro</option>
+            <option value="salvador">Salvador</option>
+          </select>
+          <i class="ph-caret-down-light" for="city"></i>
+        </div>
+        <button>Buscar agora</button>
+      </form>
+    </div>
   </header>
 </body>
 
